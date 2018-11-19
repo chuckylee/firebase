@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFAAAA"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Firebase Search"
+        android:textColor="#801515"
+        android:textSize="24sp"
+        />
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/text"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#999999"
+        android:textSize="16sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/searchlit"
+        android:layout_width="330dp"
+        android:layout_height="261dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/text"
+        android:layout_marginBottom="66dp"></android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/addbutton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="144dp"
+        android:layout_toEndOf="@+id/search"
+        android:text="ADD" />
+
+    <TextView
+        android:id="@+id/text_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/text"
+        android:layout_marginTop="161dp" />
+
+
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="44dp"
+        android:layout_height="42dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/search"
+        android:layout_marginEnd="48dp"
+        android:background="@color/colorAccent"
+        app:srcCompat="@drawable/searchicon" />
+</RelativeLayout>
